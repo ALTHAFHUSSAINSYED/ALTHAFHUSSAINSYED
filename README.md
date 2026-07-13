@@ -134,7 +134,7 @@ Results-driven DevOps and Cloud Platform Engineer with **3.10 years of experienc
 
 ---
 
-### ☸️ [Cloud-Native Kubernetes Platform on Amazon EKS](https://github.com/ALTHAFHUSSAINSYED/titanwork)
+### ☸️ Cloud-Native Kubernetes Platform on Amazon EKS
 **DXC Technology | Mar 2024 – Apr 2026**
 > Production-grade container orchestration system hosting microservices for enterprise-level clients.
 - ☸️ **EKS Clustering**: Provisioned multi-region AWS EKS clusters using reusable **Terraform modules**, reducing cluster spin-up time by **~60%** and IaC duplication by **~50%**.
@@ -143,7 +143,7 @@ Results-driven DevOps and Cloud Platform Engineer with **3.10 years of experienc
 
 ---
 
-### 🔗 [Enterprise CI/CD Automation & Security Pipeline](https://github.com/ALTHAFHUSSAINSYED/titanwork)
+### 🔗 Enterprise CI/CD Automation & Security Pipeline
 **DXC Technology | Jul 2023 – Feb 2024**
 > Standardized security-first delivery pipeline handling deployments for a 6+ member engineering team.
 - ⚙️ **Pipelines**: Maintained Jenkins and GitHub Actions pipelines that run automated Maven builds, SonarQube static code quality analysis, and Docker builds on pull requests.
