@@ -1,0 +1,313 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 610" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </linearGradient>
+
+    <!-- Glowing Radial Gradients (Subtler for Light Mode) -->
+    <radialGradient id="glowViolet" cx="20%" cy="30%" r="40%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowCyan" cx="80%" cy="20%" r="45%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowEmerald" cx="50%" cy="80%" r="40%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Shimmering Border Gradient -->
+    <linearGradient id="borderShimmer" x1="0%" y1="0%" x2="100%" y2="100%">
+      <animate attributeName="x1" values="0%;100%;0%" dur="12s" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="0%;100%;0%" dur="12s" repeatCount="indefinite"/>
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#22D3EE" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0.6"/>
+    </linearGradient>
+
+    <!-- Scanline Pattern -->
+    <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="4" y2="0" stroke="#000000" stroke-opacity="0.01" stroke-width="1"/>
+    </pattern>
+
+    <!-- ASCII Portrait Gradient -->
+    <linearGradient id="asciiGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0891B2"/>
+      <stop offset="50%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+
+    <!-- Title Gradient -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="50%" stop-color="#0891B2"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+
+    <!-- Typing Mask for Command 1: kubectl get pods -->
+    <mask id="typingMask1">
+      <rect x="0" y="0" width="1180" height="610" fill="black"/>
+      <rect x="562" y="120" width="0" height="30" fill="white">
+        <animate attributeName="width" from="0" to="250" dur="1s" begin="1s" fill="freeze"/>
+      </rect>
+    </mask>
+
+    <!-- Typing Mask for Command 2: terraform apply -->
+    <mask id="typingMask2">
+      <rect x="0" y="0" width="1180" height="610" fill="black"/>
+      <rect x="562" y="270" width="0" height="30" fill="white">
+        <animate attributeName="width" from="0" to="250" dur="1s" begin="4s" fill="freeze"/>
+      </rect>
+    </mask>
+
+    <!-- Typing Mask for Command 3: aws eks update-kubeconfig -->
+    <mask id="typingMask3">
+      <rect x="0" y="0" width="1180" height="610" fill="black"/>
+      <rect x="562" y="330" width="0" height="30" fill="white">
+        <animate attributeName="width" from="0" to="250" dur="1.2s" begin="7s" fill="freeze"/>
+      </rect>
+    </mask>
+
+    <!-- Typing Mask for Command 4: git push origin main -->
+    <mask id="typingMask4">
+      <rect x="0" y="0" width="1180" height="610" fill="black"/>
+      <rect x="562" y="390" width="0" height="30" fill="white">
+        <animate attributeName="width" from="0" to="250" dur="1s" begin="10s" fill="freeze"/>
+      </rect>
+    </mask>
+
+    <!-- Shadows -->
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <style>
+    .font-sans { font-family: 'Outfit', 'Inter', -apple-system, sans-serif; }
+    .font-mono { font-family: 'Courier New', Courier, monospace; font-weight: 500; }
+    .title { font-size: 26px; font-weight: 800; fill: url(#titleGrad); }
+    .subtitle { font-size: 14px; font-weight: 600; fill: #475569; letter-spacing: 1.5px; }
+    .ascii-text { font-size: 11px; fill: url(#asciiGrad); line-height: 14px; }
+    .term-header { font-size: 12px; fill: #94A3B8; font-weight: bold; }
+    .term-body { font-size: 13.5px; fill: #F8FAFC; }
+    .term-prompt { fill: #94A3B8; }
+    .term-cmd { fill: #22D3EE; font-weight: bold; }
+    .term-success { fill: #10B981; font-weight: bold; }
+    .term-warning { fill: #F59E0B; }
+    .term-error { fill: #EF4444; }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1180" height="610" rx="16" fill="url(#bgGrad)"/>
+
+  <!-- Radial Glow Orbs -->
+  <rect width="1180" height="610" rx="16" fill="url(#glowViolet)"/>
+  <rect width="1180" height="610" rx="16" fill="url(#glowCyan)"/>
+  <rect width="1180" height="610" rx="16" fill="url(#glowEmerald)"/>
+
+  <!-- Noise Scanlines -->
+  <rect width="1180" height="610" rx="16" fill="url(#scanlines)" pointer-events="none"/>
+
+  <!-- Floating Particles -->
+  <g opacity="0.4">
+    <circle cx="150" cy="120" r="1.5" fill="#0891B2">
+      <animate attributeName="opacity" values="0.1;0.6;0.1" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="120;100;120" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="350" cy="500" r="1" fill="#7C3AED">
+      <animate attributeName="opacity" values="0.1;0.5;0.1" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="500;480;500" dur="7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="450" cy="180" r="2" fill="#059669">
+      <animate attributeName="opacity" values="0.1;0.6;0.1" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="180;200;180" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="80" cy="400" r="1.5" fill="#0891B2">
+      <animate attributeName="opacity" values="0.2;0.5;0.2" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="400;380;400" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1080" cy="100" r="2" fill="#0891B2">
+      <animate attributeName="opacity" values="0.1;0.6;0.1" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="100;120;100" dur="7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="950" cy="520" r="1.5" fill="#7C3AED">
+      <animate attributeName="opacity" values="0.1;0.5;0.1" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="520;500;520" dur="6s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Left Column: Header Info -->
+  <g transform="translate(60, 60)" class="font-sans">
+    <!-- About Me Mini Intro -->
+    <text x="0" y="20" class="subtitle" font-weight="bold">PLATFORM ENGINEERING &amp; DEVOPS</text>
+    <text x="0" y="55" class="title">ALTHAF HUSSAIN SYED</text>
+    
+    <!-- Rotating Subtitles -->
+    <g transform="translate(0, 85)">
+      <!-- DevOps & Platform Engineer -->
+      <text x="0" y="0" font-size="16" fill="#0891B2" font-weight="bold" opacity="1">
+        <animate attributeName="opacity" values="1;1;0;0;0;0;1" keyTimes="0;0.29;0.33;0.66;0.96;0.99;1" dur="12s" repeatCount="indefinite"/>
+        🚀 DevOps &amp; Cloud Platform Engineer
+      </text>
+      <!-- AWS Specialist -->
+      <text x="0" y="0" font-size="16" fill="#059669" font-weight="bold" opacity="0">
+        <animate attributeName="opacity" values="0;0;1;1;0;0;0" keyTimes="0;0.29;0.33;0.62;0.66;0.99;1" dur="12s" repeatCount="indefinite"/>
+        ☁️ AWS Infrastructure Specialist
+      </text>
+      <!-- Kubernetes & IaC Expert -->
+      <text x="0" y="0" font-size="16" fill="#7C3AED" font-weight="bold" opacity="0">
+        <animate attributeName="opacity" values="0;0;0;0;1;1;0" keyTimes="0;0.62;0.66;0.96;0.99;1;1" dur="12s" repeatCount="indefinite"/>
+        ☸️ Kubernetes &amp; Terraform Automation
+      </text>
+    </g>
+  </g>
+
+  <!-- Left Column: Cybernetic ASCII Portrait Container (Subtle Floating Animation) -->
+  <g transform="translate(60, 190)" class="font-mono ascii-text">
+    <animateTransform attributeName="transform" type="translate" values="60,190; 60,185; 60,190" dur="6s" repeatCount="indefinite"/>
+    <!-- Line-by-line reveal using delayed opacities -->
+    <text x="0" y="14" opacity="0"><animate attributeName="opacity" to="0.9" dur="0.1s" begin="0.1s" fill="freeze"/>          .-----------------.          </text>
+    <text x="0" y="28" opacity="0"><animate attributeName="opacity" to="0.9" dur="0.1s" begin="0.2s" fill="freeze"/>         /  __           __  \         </text>
+    <text x="0" y="42" opacity="0"><animate attributeName="opacity" to="0.9" dur="0.1s" begin="0.3s" fill="freeze"/>        /  /  \  _   _  /  \  \        </text>
+    <text x="0" y="56" opacity="0"><animate attributeName="opacity" to="0.9" dur="0.1s" begin="0.4s" fill="freeze"/>       /   \__/ | | | | \__/   \       </text>
+    <text x="0" y="70" opacity="0"><animate attributeName="opacity" to="0.9" dur="0.1s" begin="0.5s" fill="freeze"/>      |         |_| |_|         |      </text>
+    <text x="0" y="84" opacity="0"><animate attributeName="opacity" to="0.9" dur="0.1s" begin="0.6s" fill="freeze"/>      |          _   _          |      </text>
+    <text x="0" y="98" opacity="0"><animate attributeName="opacity" to="0.9" dur="0.1s" begin="0.7s" fill="freeze"/>      |         | | | |         |      </text>
+    <text x="0" y="112" opacity="0"><animate attributeName="opacity" to="0.9" dur="0.1s" begin="0.8s" fill="freeze"/>       \        \_____/        /       </text>
+    <text x="0" y="126" opacity="0"><animate attributeName="opacity" to="0.9" dur="0.1s" begin="0.9s" fill="freeze"/>        \                     /        </text>
+    <text x="0" y="140" opacity="0"><animate attributeName="opacity" to="0.9" dur="0.1s" begin="1.0s" fill="freeze"/>         \  \===============/  /         </text>
+    <text x="0" y="154" opacity="0"><animate attributeName="opacity" to="0.9" dur="0.1s" begin="1.1s" fill="freeze"/>          \___________________/          </text>
+    <text x="0" y="168" opacity="0"><animate attributeName="opacity" to="0.9" dur="0.1s" begin="1.2s" fill="freeze"/>              /           \              </text>
+    <text x="0" y="182" opacity="0"><animate attributeName="opacity" to="0.9" dur="0.1s" begin="1.3s" fill="freeze"/>             /             \             </text>
+    <text x="0" y="196" opacity="0"><animate attributeName="opacity" to="0.9" dur="0.1s" begin="1.4s" fill="freeze"/>        .---/               \---.        </text>
+    <text x="0" y="210" opacity="0"><animate attributeName="opacity" to="0.9" dur="0.1s" begin="1.5s" fill="freeze"/>       /                         \       </text>
+    <text x="0" y="224" opacity="0"><animate attributeName="opacity" to="0.9" dur="0.1s" begin="1.6s" fill="freeze"/>      /  [AWS]             [K8S]  \      </text>
+    <text x="0" y="238" opacity="0"><animate attributeName="opacity" to="0.9" dur="0.1s" begin="1.7s" fill="freeze"/>     |   [IaC]             [OPS]   |     </text>
+    <text x="0" y="252" opacity="0"><animate attributeName="opacity" to="0.9" dur="0.1s" begin="1.8s" fill="freeze"/>     |                             |     </text>
+    <text x="0" y="266" opacity="0"><animate attributeName="opacity" to="0.9" dur="0.1s" begin="1.9s" fill="freeze"/>      \  =======================  /      </text>
+    <text x="0" y="280" opacity="0"><animate attributeName="opacity" to="0.9" dur="0.1s" begin="2.0s" fill="freeze"/>       \_________________________/       </text>
+    <text x="0" y="294" opacity="0"><animate attributeName="opacity" to="0.9" dur="0.1s" begin="2.1s" fill="freeze"/>               ||       ||               </text>
+    <text x="0" y="308" opacity="0"><animate attributeName="opacity" to="0.9" dur="0.1s" begin="2.2s" fill="freeze"/>               ||       ||               </text>
+    <text x="0" y="322" opacity="0"><animate attributeName="opacity" to="0.9" dur="0.1s" begin="2.3s" fill="freeze"/>              /  \     /  \              </text>
+    <text x="0" y="336" opacity="0"><animate attributeName="opacity" to="0.9" dur="0.1s" begin="2.4s" fill="freeze"/>             /____\   /____\             </text>
+  </g>
+
+  <!-- Right Column: DevOps Terminal Window -->
+  <g filter="url(#shadow)">
+    <!-- Terminal Window Header -->
+    <rect x="520" y="70" width="600" height="35" rx="12" fill="#1E293B"/>
+    <!-- Cover bottom corners of header -->
+    <rect x="520" y="90" width="600" height="15" fill="#1E293B"/>
+
+    <!-- Window Buttons -->
+    <circle cx="545" cy="87.5" r="6" fill="#EF4444"/>
+    <circle cx="565" cy="87.5" r="6" fill="#F59E0B"/>
+    <circle cx="585" cy="87.5" r="6" fill="#10B981"/>
+
+    <!-- Window Title -->
+    <text x="820" y="92" class="font-mono term-header" text-anchor="middle">althaf@dxc-devops-node-01:~</text>
+
+    <!-- Terminal Body -->
+    <rect x="520" y="105" width="600" height="435" rx="12" fill="#090D16"/>
+    <!-- Cover top corners of body -->
+    <rect x="520" y="105" width="600" height="15" fill="#090D16"/>
+
+    <!-- Terminal Content (Monospace text) -->
+    <g class="font-mono term-body">
+      
+      <!-- ==================== COMMAND 1 ==================== -->
+      <!-- Prompt and Command -->
+      <text x="545" y="140"><tspan class="term-prompt">$ </tspan><tspan class="term-cmd" mask="url(#typingMask1)">kubectl get pods</tspan></text>
+      
+      <!-- Blinking Typing Cursor 1 -->
+      <rect x="562" y="125" width="8" height="18" fill="#22D3EE" opacity="0">
+        <set attributeName="opacity" to="1" begin="1s"/>
+        <animate attributeName="x" from="562" to="700" dur="1s" begin="1s" fill="freeze"/>
+        <animate attributeName="opacity" values="1;0;1" dur="0.8s" begin="1s" repeatCount="indefinite"/>
+        <set attributeName="opacity" to="0" begin="2s"/>
+      </rect>
+
+      <!-- Output 1 (Appears instantly at 2.2s) -->
+      <g opacity="0">
+        <set attributeName="opacity" to="1" begin="2.2s"/>
+        <text x="545" y="165" fill="#64748B" font-weight="bold">NAME          READY   STATUS    RESTARTS   AGE</text>
+        <text x="545" y="185">frontend      1/1     <tspan class="term-success">Running</tspan>   0          42d</text>
+        <text x="545" y="205">backend       1/1     <tspan class="term-success">Running</tspan>   0          42d</text>
+        <text x="545" y="225">prometheus    1/1     <tspan class="term-success">Running</tspan>   0          108d</text>
+        <text x="545" y="245">grafana       1/1     <tspan class="term-success">Running</tspan>   0          108d</text>
+      </g>
+
+      <!-- ==================== COMMAND 2 ==================== -->
+      <!-- Prompt and Command -->
+      <g opacity="0">
+        <set attributeName="opacity" to="1" begin="3.8s"/>
+        <text x="545" y="285"><tspan class="term-prompt">$ </tspan><tspan class="term-cmd" mask="url(#typingMask2)">terraform apply</tspan></text>
+      </g>
+      
+      <!-- Blinking Typing Cursor 2 -->
+      <rect x="562" y="270" width="8" height="18" fill="#22D3EE" opacity="0">
+        <set attributeName="opacity" to="1" begin="4s"/>
+        <animate attributeName="x" from="562" to="690" dur="1s" begin="4s" fill="freeze"/>
+        <animate attributeName="opacity" values="1;0;1" dur="0.8s" begin="4s" repeatCount="indefinite"/>
+        <set attributeName="opacity" to="0" begin="5s"/>
+      </rect>
+
+      <!-- Output 2 (Appears at 5.2s) -->
+      <g opacity="0">
+        <set attributeName="opacity" to="1" begin="5.2s"/>
+        <text x="545" y="310" class="term-success">Apply complete! Resources: 47 added.</text>
+      </g>
+
+      <!-- ==================== COMMAND 3 ==================== -->
+      <!-- Prompt and Command -->
+      <g opacity="0">
+        <set attributeName="opacity" to="1" begin="6.8s"/>
+        <text x="545" y="350"><tspan class="term-prompt">$ </tspan><tspan class="term-cmd" mask="url(#typingMask3)">aws eks update-kubeconfig</tspan></text>
+      </g>
+      
+      <!-- Blinking Typing Cursor 3 -->
+      <rect x="562" y="335" width="8" height="18" fill="#22D3EE" opacity="0">
+        <set attributeName="opacity" to="1" begin="7s"/>
+        <animate attributeName="x" from="562" to="780" dur="1.2s" begin="7s" fill="freeze"/>
+        <animate attributeName="opacity" values="1;0;1" dur="0.8s" begin="7s" repeatCount="indefinite"/>
+        <set attributeName="opacity" to="0" begin="8.2s"/>
+      </rect>
+
+      <!-- Output 3 (Appears at 8.4s) -->
+      <g opacity="0">
+        <set attributeName="opacity" to="1" begin="8.4s"/>
+        <text x="545" y="375" fill="#E2E8F0">Updated context.</text>
+      </g>
+
+      <!-- ==================== COMMAND 4 ==================== -->
+      <!-- Prompt and Command -->
+      <g opacity="0">
+        <set attributeName="opacity" to="1" begin="9.8s"/>
+        <text x="545" y="415"><tspan class="term-prompt">$ </tspan><tspan class="term-cmd" mask="url(#typingMask4)">git push origin main</tspan></text>
+      </g>
+      
+      <!-- Blinking Typing Cursor 4 -->
+      <rect x="562" y="400" width="8" height="18" fill="#22D3EE" opacity="0">
+        <set attributeName="opacity" to="1" begin="10s"/>
+        <animate attributeName="x" from="562" to="740" dur="1s" begin="10s" fill="freeze"/>
+        <animate attributeName="opacity" values="1;0;1" dur="0.8s" begin="10s" repeatCount="indefinite"/>
+        <set attributeName="opacity" to="0" begin="11s"/>
+      </rect>
+
+      <!-- Output 4 (Appears at 11.2s) -->
+      <g opacity="0">
+        <set attributeName="opacity" to="1" begin="11.2s"/>
+        <text x="545" y="440" class="term-success">Deployment Successful ✔</text>
+      </g>
+      
+    </g>
+  </g>
+
+  <!-- Shimmering Outer Border -->
+  <rect x="1" y="1" width="1178" height="608" rx="16" fill="none" stroke="url(#borderShimmer)" stroke-width="2"/>
+  <rect x="8" y="8" width="1164" height="594" rx="12" fill="none" stroke="#000000" stroke-opacity="0.03" stroke-width="1"/>
+</svg>
