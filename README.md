@@ -134,7 +134,7 @@ Results-driven DevOps and Cloud Platform Engineer with **3.10 years of experienc
 
 ---
 
-### ☸️ Cloud-Native Kubernetes Platform on Amazon EKS
+### ☸️ [Cloud-Native Kubernetes Platform on Amazon EKS](https://althafportfolio.site/projects/68b732a3-cd7a-4613-84e7-599039fbe199)
 **DXC Technology | Mar 2024 – Apr 2026**
 > Production-grade container orchestration system hosting microservices for enterprise-level clients.
 - ☸️ **EKS Clustering**: Provisioned multi-region AWS EKS clusters using reusable **Terraform modules**, reducing cluster spin-up time by **~60%** and IaC duplication by **~50%**.
@@ -149,6 +149,15 @@ Results-driven DevOps and Cloud Platform Engineer with **3.10 years of experienc
 - ⚙️ **Pipelines**: Maintained Jenkins and GitHub Actions pipelines that run automated Maven builds, SonarQube static code quality analysis, and Docker builds on pull requests.
 - 🛡️ **Shift-Left Security**: Integrated Trivy container image security scans and SonarQube quality gates, blocking non-compliant builds before they hit AWS ECR. Improved base quality score by **~25%**.
 - 🔵🟢 **Deployment Strategies**: Configured AWS Developer Tools (CodeDeploy, CodePipeline) to perform **Blue-Green and Rolling deployments**, eliminating downtime and reducing failed release rollbacks by **~50%**.
+
+---
+
+### ☁️ [Enterprise Cloud Migration & Modernization Platform](https://althafportfolio.site/projects/f71e4ef1-a49a-4789-b6b4-0976e36a0fed)
+**DXC Technology | Nov 2022 – Jun 2023**
+> Full legacy-to-cloud workload migration and automated infrastructure setup for an enterprise client.
+- 🌐 **VPC Networking**: Provisioned secure Amazon VPC subnets, security groups, route tables, and NAT gateways for a high-availability 3-tier architecture across 2 Availability Zones.
+- 📈 **High Availability**: Implemented Auto Scaling Groups (ASG) and Application Load Balancers (ALB) to handle traffic spikes smoothly, maintaining **99.9% uptime** during peak hours.
+- 💾 **Data & Cache**: Configured Amazon RDS, RabbitMQ messaging queues, and Memcached cache instances, automating the provisioning using Terraform IaC and Bash scripts, which reduced environment setup time from days to **under 2 hours**.
 
 ---
 
