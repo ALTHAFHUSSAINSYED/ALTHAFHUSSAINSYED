@@ -171,87 +171,98 @@
   <g transform="translate(60, 190)" class="font-mono ascii-text" xml:space="preserve">
     <animateTransform attributeName="transform" type="translate" values="60,190; 60,185; 60,190" dur="6s" repeatCount="indefinite"/>
     <!-- Line-by-line reveal using delayed opacities -->
-    <!-- Three Animated DevOps Stack Icons Side-by-Side -->
+    <!-- Three Animated DevOps Stack Icons Side-by-Side (Shifted Left) -->
     <!-- 1. Kubernetes Steering Wheel (Slow Rotation) -->
     <g opacity="0">
       <animate attributeName="opacity" to="0.95" dur="0.5s" begin="0.1s" fill="freeze"/>
       <g>
-        <animateTransform attributeName="transform" type="rotate" from="0 75 80" to="360 75 80" dur="25s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="rotate" from="0 50 80" to="360 50 80" dur="25s" repeatCount="indefinite"/>
         <!-- Background -->
-        <polygon points="75,40 106.3,55.1 114,88.9 92.4,116 57.6,116 36,88.9 43.7,55.1" fill="#326ce5"/>
+        <polygon points="50,45 77.4,58.2 84.1,87.8 65.2,111.5 34.8,111.5 15.9,87.8 22.6,58.2" fill="#326ce5"/>
         <!-- Rim -->
-        <polygon points="75,45 101.4,58.3 108.2,87.6 89.4,110 60.6,110 41.8,87.6 48.6,58.3" fill="none" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round"/>
+        <polygon points="50,49 74.2,60.7 80.2,86.9 63.5,107.9 36.5,107.9 19.8,86.9 25.8,60.7" fill="none" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round"/>
         <!-- Spokes -->
-        <g id="k8s-spoke-small">
-          <line x1="75" y1="80" x2="75" y2="45" stroke="#ffffff" stroke-width="4.5"/>
-          <circle cx="75" cy="40" r="6" fill="#ffffff"/>
-          <circle cx="75" cy="40" r="2.5" fill="#326ce5"/>
+        <g id="k8s-spoke-small-left">
+          <line x1="50" y1="80" x2="50" y2="49" stroke="#ffffff" stroke-width="4.5"/>
+          <circle cx="50" cy="45" r="5.5" fill="#ffffff"/>
+          <circle cx="50" cy="45" r="2.2" fill="#326ce5"/>
         </g>
-        <use href="#k8s-spoke-small" transform="rotate(51.43, 75, 80)"/>
-        <use href="#k8s-spoke-small" transform="rotate(102.86, 75, 80)"/>
-        <use href="#k8s-spoke-small" transform="rotate(154.29, 75, 80)"/>
-        <use href="#k8s-spoke-small" transform="rotate(205.71, 75, 80)"/>
-        <use href="#k8s-spoke-small" transform="rotate(257.14, 75, 80)"/>
-        <use href="#k8s-spoke-small" transform="rotate(308.57, 75, 80)"/>
+        <use href="#k8s-spoke-small-left" transform="rotate(51.43, 50, 80)"/>
+        <use href="#k8s-spoke-small-left" transform="rotate(102.86, 50, 80)"/>
+        <use href="#k8s-spoke-small-left" transform="rotate(154.29, 50, 80)"/>
+        <use href="#k8s-spoke-small-left" transform="rotate(205.71, 50, 80)"/>
+        <use href="#k8s-spoke-small-left" transform="rotate(257.14, 50, 80)"/>
+        <use href="#k8s-spoke-small-left" transform="rotate(308.57, 50, 80)"/>
         <!-- Hub -->
-        <circle cx="75" cy="80" r="9" fill="#326ce5" stroke="#ffffff" stroke-width="4.5"/>
+        <circle cx="50" cy="80" r="9" fill="#326ce5" stroke="#ffffff" stroke-width="4.5"/>
       </g>
     </g>
 
-    <!-- 2. Docker Whale (Floating Animation) -->
+    <!-- 2. Docker Whale (Floating Animation - Shifted Left) -->
     <g opacity="0">
       <animate attributeName="opacity" to="0.95" dur="0.5s" begin="0.25s" fill="freeze"/>
       <g>
         <animateTransform attributeName="transform" type="translate" values="0,0; 0,-5; 0,0" dur="4s" repeatCount="indefinite"/>
         <!-- Whale silhouette path scaled & translated -->
-        <path transform="translate(155, 42) scale(3.3)" d="M13.983 11.078h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m0 2.716h2.118a.187.187 0 00.186-.186V6.29a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.887c0 .102.082.185.185.186m-2.93 0h2.12a.186.186 0 00.184-.186V6.29a.185.185 0 00-.185-.185H8.1a.185.185 0 00-.185.185v1.887c0 .102.083.185.185.186m-2.964 0h2.119a.186.186 0 00.185-.186V6.29a.185.185 0 00-.185-.185H5.136a.186.186 0 00-.186.185v1.887c0 .102.084.185.186.186m5.893 2.715h2.118a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m-2.93 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.083.185.185.185m-2.964 0h2.119a.185.185 0 00.185-.185V9.006a.185.185 0 00-.184-.186h-2.12a.186.186 0 00-.186.186v1.887c0 .102.084.185.186.185m-2.92 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.082.185.185.185M23.763 9.89c-.065-.051-.672-.51-1.954-.51-.338.001-.676.03-1.01.087-.248-1.7-1.653-2.53-1.716-2.566l-.344-.199-.226.327c-.284.438-.49.922-.612 1.43-.23.97-.09 1.882.403 2.661-.595.332-1.55.413-1.744.42H.751a.751.751 0 00-.75.748 11.376 11.376 0 00.692 4.062c.545 1.428 1.355 2.48 2.41 3.124 1.18.723 3.1 1.137 5.275 1.137.983.003 1.963-.086 2.93-.266a12.248 12.248 0 003.823-1.389c.98-.567 1.86-1.288 2.61-2.136 1.252-1.418 1.998-2.997 2.553-4.4h.221c1.372 0 2.215-.549 2.68-1.009.309-.293.55-.65.707-1.046l.098-.288Z" fill="#2496ed"/>
+        <path transform="translate(104, 44) scale(3.0)" d="M13.983 11.078h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m0 2.716h2.118a.187.187 0 00.186-.186V6.29a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.887c0 .102.082.185.185.186m-2.93 0h2.12a.186.186 0 00.184-.186V6.29a.185.185 0 00-.185-.185H8.1a.185.185 0 00-.185.185v1.887c0 .102.083.185.185.186m-2.964 0h2.119a.186.186 0 00.185-.186V6.29a.185.185 0 00-.185-.185H5.136a.186.186 0 00-.186.185v1.887c0 .102.084.185.186.186m5.893 2.715h2.118a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m-2.93 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.083.185.185.185m-2.964 0h2.119a.185.185 0 00.185-.185V9.006a.185.185 0 00-.184-.186h-2.12a.186.186 0 00-.186.186v1.887c0 .102.084.185.186.185m-2.92 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.082.185.185.185M23.763 9.89c-.065-.051-.672-.51-1.954-.51-.338.001-.676.03-1.01.087-.248-1.7-1.653-2.53-1.716-2.566l-.344-.199-.226.327c-.284.438-.49.922-.612 1.43-.23.97-.09 1.882.403 2.661-.595.332-1.55.413-1.744.42H.751a.751.751 0 00-.75.748 11.376 11.376 0 00.692 4.062c.545 1.428 1.355 2.48 2.41 3.124 1.18.723 3.1 1.137 5.275 1.137.983.003 1.963-.086 2.93-.266a12.248 12.248 0 003.823-1.389c.98-.567 1.86-1.288 2.61-2.136 1.252-1.418 1.998-2.997 2.553-4.4h.221c1.372 0 2.215-.549 2.68-1.009.309-.293.55-.65.707-1.046l.098-.288Z" fill="#2496ed"/>
       </g>
     </g>
 
-    <!-- 3. CI/CD Pipeline (Flowing Packets and Pulsing Halo Nodes) -->
-    <g opacity="0">
-      <animate attributeName="opacity" to="0.95" dur="0.5s" begin="0.4s" fill="freeze"/>
-      <!-- Flowing connection lines -->
-      <path d="M280,55 L345,80" stroke="#00f2fe" stroke-width="4.5" stroke-linecap="round" stroke-dasharray="8,6" fill="none">
-        <animate attributeName="stroke-dashoffset" values="28;0" dur="1s" repeatCount="indefinite"/>
-      </path>
-      <path d="M280,105 L345,80" stroke="#00f2fe" stroke-width="4.5" stroke-linecap="round" stroke-dasharray="8,6" fill="none">
-        <animate attributeName="stroke-dashoffset" values="28;0" dur="1s" repeatCount="indefinite"/>
-      </path>
+    <!-- 3. GitHub Actions Logo (Accurate Shape & Sequential Running Pipeline Animation) -->
+    <g>
+      <!-- Play button circle and arrow (Starts immediately) -->
+      <g opacity="0">
+        <animate attributeName="opacity" to="0.95" dur="0.3s" begin="0.4s" fill="freeze"/>
+        <circle cx="215" cy="52" r="12" stroke="#22d3ee" stroke-width="2.5" fill="none"/>
+        <polygon points="212,47 212,57 220,52" fill="#22d3ee"/>
+      </g>
       
-      <!-- Node 1 (Build - Cyan) -->
-      <circle cx="280" cy="55" r="6" fill="#06b6d4">
-        <animate attributeName="r" values="6;10;6" dur="2s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="280" cy="55" r="5" fill="#06b6d4" stroke="#ffffff" stroke-width="1.5"/>
+      <!-- Upper Line and Checkmark 1 (Fades in second) -->
+      <g opacity="0">
+        <animate attributeName="opacity" to="0.95" dur="0.3s" begin="0.7s" fill="freeze"/>
+        <path d="M 215,64 C 215,72 225,72 235,72 L 240,72" stroke="#22d3ee" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+        <circle cx="240" cy="72" r="7" stroke="#22d3ee" stroke-width="2.5" fill="none"/>
+        <path d="M 237,72 L 239,74 L 243,70" stroke="#22d3ee" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      </g>
 
-      <!-- Node 2 (Test - Violet) -->
-      <circle cx="280" cy="105" r="6" fill="#7c3aed">
-        <animate attributeName="r" values="6;10;6" dur="2s" begin="0.66s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="1;0.4;1" dur="2s" begin="0.66s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="280" cy="105" r="5" fill="#7c3aed" stroke="#ffffff" stroke-width="1.5"/>
+      <!-- Checkmark 2 (Fades in third) -->
+      <g opacity="0">
+        <animate attributeName="opacity" to="0.95" dur="0.3s" begin="1.0s" fill="freeze"/>
+        <path d="M 247,72 L 255,72" stroke="#22d3ee" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+        <circle cx="262" cy="72" r="7" stroke="#22d3ee" stroke-width="2.5" fill="none"/>
+        <path d="M 259,72 L 261,74 L 265,70" stroke="#22d3ee" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      </g>
 
-      <!-- Node 3 (Deploy - Emerald) -->
-      <circle cx="345" cy="80" r="7" fill="#10b981">
-        <animate attributeName="r" values="7;11;7" dur="2s" begin="1.33s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="1;0.4;1" dur="2s" begin="1.33s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="345" cy="80" r="6" fill="#10b981" stroke="#ffffff" stroke-width="1.5"/>
+      <!-- Lower Line and Dots Node (Fades in fourth) -->
+      <g opacity="0">
+        <animate attributeName="opacity" to="0.95" dur="0.3s" begin="1.3s" fill="freeze"/>
+        <path d="M 215,64 L 215,88 C 215,96 225,96 235,96 L 240,96" stroke="#22d3ee" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+        <circle cx="240" cy="96" r="7" stroke="#22d3ee" stroke-width="2.5" fill="none"/>
+        <circle cx="237.5" cy="96" r="1.2" fill="#22d3ee"/>
+        <circle cx="242.5" cy="96" r="1.2" fill="#22d3ee"/>
+      </g>
+
+      <!-- Status Node (Fades in fifth and pulses) -->
+      <g opacity="0">
+        <animate attributeName="opacity" to="0.95" dur="0.3s" begin="1.6s" fill="freeze"/>
+        <path d="M 247,96 L 255,96" stroke="#22d3ee" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+        <circle cx="262" cy="96" r="7" stroke="#22d3ee" stroke-width="2.5" fill="none">
+          <animate attributeName="stroke" values="#22d3ee;#7c3aed;#22d3ee" dur="2s" repeatCount="indefinite"/>
+        </circle>
+      </g>
     </g>
 
-    <!-- Slanted K8S Letters centered at x=90 -->
-    <text x="90" y="180" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="0.75s" fill="freeze"/>  _   _     ___     _____  </text>
-    <text x="90" y="196" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="0.8s" fill="freeze"/> | |/ /    /   \   /     / </text>
-    <text x="90" y="212" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="0.85s" fill="freeze"/> | ' /    | (_) |  \_____\ </text>
-    <text x="90" y="228" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="0.9s" fill="freeze"/> |  &lt;      &gt; _ &lt;          \</text>
-    <text x="90" y="244" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="0.95s" fill="freeze"/> | . \    | (_) |  _____) |</text>
-    <text x="90" y="260" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="1.0s" fill="freeze"/> |_|\_\    \___/  /     /  </text>
-    <text x="90" y="276" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="1.05s" fill="freeze"/>                  \____/   </text>
-    <text x="90" y="292" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="1.1s" fill="freeze"/>                           </text>
-    <text x="90" y="308" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="1.15s" fill="freeze"/>                           </text>
-    <text x="90" y="322" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="1.2s" fill="freeze"/>                           </text>
+    <!-- Slanted K8S Letters with textLength to prevent browser warping -->
+    <text x="10" y="170" font-size="16" font-family="'Courier New', Courier, monospace" font-weight="bold" textLength="260" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="0.75s" fill="freeze"/>  _   _       ___       _____  </text>
+    <text x="10" y="188" font-size="16" font-family="'Courier New', Courier, monospace" font-weight="bold" textLength="260" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="0.8s" fill="freeze"/> | |/ /      /   \     /     / </text>
+    <text x="10" y="206" font-size="16" font-family="'Courier New', Courier, monospace" font-weight="bold" textLength="260" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="0.85s" fill="freeze"/> | ' /      | (_) |    \_____\ </text>
+    <text x="10" y="224" font-size="16" font-family="'Courier New', Courier, monospace" font-weight="bold" textLength="260" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="0.9s" fill="freeze"/> |  &lt;        &gt; _ &lt;            \</text>
+    <text x="10" y="242" font-size="16" font-family="'Courier New', Courier, monospace" font-weight="bold" textLength="260" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="0.95s" fill="freeze"/> | . \      | (_) |    _____) |</text>
+    <text x="10" y="260" font-size="16" font-family="'Courier New', Courier, monospace" font-weight="bold" textLength="260" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="1.0s" fill="freeze"/> |_|\_\      \___/    /     /  </text>
+    <text x="10" y="278" font-size="16" font-family="'Courier New', Courier, monospace" font-weight="bold" textLength="260" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="1.05s" fill="freeze"/>                    \____/     </text>
+    <text x="10" y="296" font-size="16" font-family="'Courier New', Courier, monospace" font-weight="bold" textLength="260" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="1.1s" fill="freeze"/>                           </text>
+    <text x="10" y="314" font-size="16" font-family="'Courier New', Courier, monospace" font-weight="bold" textLength="260" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="1.15s" fill="freeze"/>                           </text>
+    <text x="10" y="332" font-size="16" font-family="'Courier New', Courier, monospace" font-weight="bold" textLength="260" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="1.2s" fill="freeze"/>                           </text>
   </g>
 
   <!-- Right Column: DevOps Terminal Window -->
