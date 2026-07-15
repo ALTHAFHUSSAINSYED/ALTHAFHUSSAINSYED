@@ -260,17 +260,55 @@
       </g>
     </g>
 
-    <!-- Slanted K8S Letters: Show only K under the steering wheel (x=15, textLength=60) -->
-    <text x="15" y="165" font-size="18" font-family="'Courier New', Courier, monospace" font-weight="bold" textLength="60" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="0.75s" fill="freeze"/>│    ╱</text>
-    <text x="15" y="183" font-size="18" font-family="'Courier New', Courier, monospace" font-weight="bold" textLength="60" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="0.8s" fill="freeze"/>│   ╱ </text>
-    <text x="15" y="201" font-size="18" font-family="'Courier New', Courier, monospace" font-weight="bold" textLength="60" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="0.85s" fill="freeze"/>│  ╱  </text>
-    <text x="15" y="219" font-size="18" font-family="'Courier New', Courier, monospace" font-weight="bold" textLength="60" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="0.9s" fill="freeze"/>│ ╱   </text>
-    <text x="15" y="237" font-size="18" font-family="'Courier New', Courier, monospace" font-weight="bold" textLength="60" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="0.95s" fill="freeze"/>├╱    </text>
-    <text x="15" y="255" font-size="18" font-family="'Courier New', Courier, monospace" font-weight="bold" textLength="60" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="1.0s" fill="freeze"/>│ ╲   </text>
-    <text x="15" y="273" font-size="18" font-family="'Courier New', Courier, monospace" font-weight="bold" textLength="60" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="1.05s" fill="freeze"/>│  ╲  </text>
-    <text x="15" y="291" font-size="18" font-family="'Courier New', Courier, monospace" font-weight="bold" textLength="60" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="1.1s" fill="freeze"/>│   ╲ </text>
-    <text x="15" y="309" font-size="18" font-family="'Courier New', Courier, monospace" font-weight="bold" textLength="60" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="1.15s" fill="freeze"/>│    ╲</text>
-    <text x="15" y="327" font-size="18" font-family="'Courier New', Courier, monospace" font-weight="bold" textLength="60" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="1.2s" fill="freeze"/>      </text>
+    <!-- Vector Snake Game K8S Tracks & Animated Snakes (Light Mode) -->
+    <!-- Group 1: Outer Rails (Slate-400) -->
+    <g stroke="#94a3b8" stroke-width="12" stroke-linejoin="miter" stroke-linecap="square" fill="none">
+      <!-- K Paths -->
+      <path d="M 45,15 L 45,105"/>
+      <path d="M 80,15 L 80,37.5 L 62.5,37.5 L 62.5,60 L 45,60"/>
+      <path d="M 45,60 L 62.5,60 L 62.5,82.5 L 80,82.5 L 80,105"/>
+      <!-- 8 Paths -->
+      <path d="M 150,15 L 190,15 L 190,60 L 150,60 L 150,105 L 190,105 L 190,60 L 150,60 Z"/>
+      <!-- S Paths -->
+      <path d="M 315,15 L 275,15 L 275,60 L 315,60 L 315,105 L 275,105"/>
+      
+      <!-- Terminal Station Cups (Anchor Cups at the bottom of each column) -->
+      <path d="M 40,105 L 40,112 L 50,112 L 50,105"/>
+      <path d="M 75,105 L 75,112 L 85,112 L 85,105"/>
+      <path d="M 145,105 L 145,112 L 195,112 L 195,105"/>
+      <path d="M 270,105 L 270,112 L 320,112 L 320,105"/>
+    </g>
+
+    <!-- Group 2: Inner Hollow (Background matching #ffffff) -->
+    <g stroke="#ffffff" stroke-width="8" stroke-linejoin="miter" stroke-linecap="square" fill="none">
+      <!-- K Paths -->
+      <path d="M 45,15 L 45,105"/>
+      <path d="M 80,15 L 80,37.5 L 62.5,37.5 L 62.5,60 L 45,60"/>
+      <path d="M 45,60 L 62.5,60 L 62.5,82.5 L 80,82.5 L 80,105"/>
+      <!-- 8 Paths -->
+      <path d="M 150,15 L 190,15 L 190,60 L 150,60 L 150,105 L 190,105 L 190,60 L 150,60 Z"/>
+      <!-- S Paths -->
+      <path d="M 315,15 L 275,15 L 275,60 L 315,60 L 315,105 L 275,105"/>
+      
+      <!-- Anchor Cup hollows -->
+      <path d="M 40,105 L 40,112 L 50,112 L 50,105"/>
+      <path d="M 75,105 L 75,112 L 85,112 L 85,105"/>
+      <path d="M 145,105 L 145,112 L 195,112 L 195,105"/>
+      <path d="M 270,105 L 270,112 L 320,112 L 320,105"/>
+    </g>
+
+    <!-- Group 3: Animated Snake Bodies (Glowing Deep Royal Blue #1d4ed8, 24px segments) -->
+    <g stroke="#1d4ed8" stroke-width="8" stroke-linejoin="miter" stroke-linecap="square" fill="none" stroke-dasharray="24 60">
+      <animate attributeName="stroke-dashoffset" values="0; -84" dur="2.5s" repeatCount="indefinite"/>
+      <!-- K Paths -->
+      <path d="M 45,15 L 45,105"/>
+      <path d="M 80,15 L 80,37.5 L 62.5,37.5 L 62.5,60 L 45,60"/>
+      <path d="M 45,60 L 62.5,60 L 62.5,82.5 L 80,82.5 L 80,105"/>
+      <!-- 8 Loop -->
+      <path d="M 150,15 L 190,15 L 190,60 L 150,60 L 150,105 L 190,105 L 190,60 L 150,60 Z"/>
+      <!-- S Path -->
+      <path d="M 315,15 L 275,15 L 275,60 L 315,60 L 315,105 L 275,105"/>
+    </g>
   </g>
 
   <!-- Right Column: DevOps Terminal Window -->
