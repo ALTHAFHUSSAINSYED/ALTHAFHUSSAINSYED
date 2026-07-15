@@ -167,7 +167,7 @@
   </g>
 
   <!-- Left Column: Cybernetic ASCII Portrait Container (Subtle Floating Animation) -->
-  <g transform="translate(60, 190)" class="font-mono ascii-text">
+  <g transform="translate(60, 190)" class="font-mono ascii-text" xml:space="preserve">
     <animateTransform attributeName="transform" type="translate" values="60,190; 60,185; 60,190" dur="6s" repeatCount="indefinite"/>
     <!-- Line-by-line reveal using delayed opacities -->
     <text x="0" y="14" opacity="0"><animate attributeName="opacity" to="0.9" dur="0.1s" begin="0.1s" fill="freeze"/>          .-----------------.          </text>
@@ -209,7 +209,7 @@
     <circle cx="585" cy="87.5" r="6" fill="#10B981"/>
 
     <!-- Window Title -->
-    <text x="820" y="92" class="font-mono term-header" text-anchor="middle">althaf@dxc-devops-node-01:~</text>
+    <text x="820" y="92" class="font-mono term-header" text-anchor="middle">althaf@devops-node-01:~</text>
 
     <!-- Terminal Body -->
     <rect x="520" y="105" width="600" height="435" rx="12" fill="#090D16"/>
