@@ -194,16 +194,16 @@
       <!-- Inner Hub -->
       <circle cx="110" cy="80" r="12" fill="#326ce5" stroke="#ffffff" stroke-width="6"/>
     </g>
-    <text x="0" y="196" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="0.75s" fill="freeze"/>          #  #   ###   ###            </text>
-    <text x="0" y="210" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="0.8s" fill="freeze"/>          # #   #   # #               </text>
-    <text x="0" y="224" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="0.85s" fill="freeze"/>          ##     ###   ###            </text>
-    <text x="0" y="238" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="0.9s" fill="freeze"/>          # #   #   #     #           </text>
-    <text x="0" y="252" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="0.95s" fill="freeze"/>          #  #   ###   ###            </text>
-    <text x="0" y="266" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="1.0s" fill="freeze"/>                                      </text>
-    <text x="0" y="280" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="1.05s" fill="freeze"/>                                      </text>
-    <text x="0" y="294" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="1.1s" fill="freeze"/>                                      </text>
-    <text x="0" y="308" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="1.15s" fill="freeze"/>                                      </text>
-    <text x="0" y="322" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="1.2s" fill="freeze"/>                                      </text>
+    <text x="0" y="180" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="0.75s" fill="freeze"/>  _   _     ___     _____  </text>
+    <text x="0" y="196" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="0.8s" fill="freeze"/> | |/ /    /   \   /     / </text>
+    <text x="0" y="212" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="0.85s" fill="freeze"/> | ' /    | (_) |  \_____\ </text>
+    <text x="0" y="228" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="0.9s" fill="freeze"/> |  &lt;      &gt; _ &lt;          \</text>
+    <text x="0" y="244" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="0.95s" fill="freeze"/> | . \    | (_) |  _____) |</text>
+    <text x="0" y="260" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="1.0s" fill="freeze"/> |_|\_\    \___/  /     /  </text>
+    <text x="0" y="276" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="1.05s" fill="freeze"/>                  \____/   </text>
+    <text x="0" y="292" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="1.1s" fill="freeze"/>                           </text>
+    <text x="0" y="308" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="1.15s" fill="freeze"/>                           </text>
+    <text x="0" y="322" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="1.2s" fill="freeze"/>                           </text>
   </g>
 
   <!-- Right Column: DevOps Terminal Window -->
