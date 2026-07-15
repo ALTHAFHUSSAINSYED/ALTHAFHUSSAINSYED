@@ -171,19 +171,30 @@
   <g transform="translate(60, 190)" class="font-mono ascii-text" xml:space="preserve">
     <animateTransform attributeName="transform" type="translate" values="60,190; 60,185; 60,190" dur="6s" repeatCount="indefinite"/>
     <!-- Line-by-line reveal using delayed opacities -->
-    <text x="0" y="14" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="0.1s" fill="freeze"/>                .----.                </text>
-    <text x="0" y="28" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="0.15s" fill="freeze"/>               /  /\  \               </text>
-    <text x="0" y="42" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="0.2s" fill="freeze"/>              /  /  \  \              </text>
-    <text x="0" y="56" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="0.25s" fill="freeze"/>         .---'  /____\  '---.         </text>
-    <text x="0" y="70" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="0.3s" fill="freeze"/>        /  /\   \    /   /\  \        </text>
-    <text x="0" y="84" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="0.35s" fill="freeze"/>       |  |  |   \  /   |  |  |       </text>
-    <text x="0" y="98" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="0.4s" fill="freeze"/>       |  |  |    \/    |  |  |       </text>
-    <text x="0" y="112" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="0.45s" fill="freeze"/>        \  \/    .---.   \/  /        </text>
-    <text x="0" y="126" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="0.5s" fill="freeze"/>         '---.  /_____\ .---'         </text>
-    <text x="0" y="140" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="0.55s" fill="freeze"/>              \  \   /  /             </text>
-    <text x="0" y="154" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="0.6s" fill="freeze"/>               \  \ /  /              </text>
-    <text x="0" y="168" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="0.65s" fill="freeze"/>                '----'                </text>
-    <text x="0" y="182" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="0.7s" fill="freeze"/>                                      </text>
+    <!-- Vector Kubernetes Steering Wheel Icon (Accurate Shape) -->
+    <g opacity="0">
+      <animate attributeName="opacity" to="0.95" dur="0.5s" begin="0.1s" fill="freeze"/>
+      <!-- Kubernetes Logo Background -->
+      <polygon points="110,20 156.9,42.6 168.5,93.4 136,134.1 84,134.1 51.5,93.4 63.1,42.6" fill="#326ce5"/>
+      <!-- Outer Rim (Heptagonal wheel body) -->
+      <polygon points="110,28 149.8,47.8 159.8,91.3 131.8,126.5 88.2,126.5 60.2,91.3 70.2,47.8" fill="none" stroke="#ffffff" stroke-width="6" stroke-linejoin="round"/>
+      <!-- Spokes and Handles -->
+      <g>
+        <g id="k8s-spoke">
+          <line x1="110" y1="80" x2="110" y2="28" stroke="#ffffff" stroke-width="6"/>
+          <circle cx="110" cy="20" r="8" fill="#ffffff"/>
+          <circle cx="110" cy="20" r="3.5" fill="#326ce5"/>
+        </g>
+        <use href="#k8s-spoke" transform="rotate(51.43, 110, 80)"/>
+        <use href="#k8s-spoke" transform="rotate(102.86, 110, 80)"/>
+        <use href="#k8s-spoke" transform="rotate(154.29, 110, 80)"/>
+        <use href="#k8s-spoke" transform="rotate(205.71, 110, 80)"/>
+        <use href="#k8s-spoke" transform="rotate(257.14, 110, 80)"/>
+        <use href="#k8s-spoke" transform="rotate(308.57, 110, 80)"/>
+      </g>
+      <!-- Inner Hub -->
+      <circle cx="110" cy="80" r="12" fill="#326ce5" stroke="#ffffff" stroke-width="6"/>
+    </g>
     <text x="0" y="196" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="0.75s" fill="freeze"/>          #  #   ###   ###            </text>
     <text x="0" y="210" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="0.8s" fill="freeze"/>          # #   #   # #               </text>
     <text x="0" y="224" opacity="0"><animate attributeName="opacity" to="0.95" dur="0.1s" begin="0.85s" fill="freeze"/>          ##     ###   ###            </text>
