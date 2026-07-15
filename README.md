@@ -36,36 +36,36 @@ Results-driven DevOps and Cloud Platform Engineer with **3.10 years of experienc
   <table>
     <tr>
       <td>
-        <a href="https://aws.amazon.com/certification/">
+        <a href="https://www.credly.com/badges/18fc8681-8e0b-422b-bc98-03c175fc87c7/public_url">
           <img src="https://img.shields.io/badge/AWS-Solutions%20Architect%20%E2%80%93%20Associate-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS Certified Solutions Architect Associate">
         </a>
       </td>
       <td>
-        <a href="https://cloud.google.com/learn/certification">
+        <a href="https://www.credly.com/badges/f0909c7d-7eb5-4c28-a060-d9da0f3513c7/public_url">
           <img src="https://img.shields.io/badge/Google%20Cloud-Professional%20Cloud%20Architect-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white" alt="Google Cloud Professional Cloud Architect">
         </a>
       </td>
     </tr>
     <tr>
       <td>
-        <a href="https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/">
+        <a href="https://learn.microsoft.com/en-us/users/althafhussainsyed-6949/credentials/92511826f135b400?ref=https%3A%2F%2Fwww.credly.com%2F">
           <img src="https://img.shields.io/badge/Microsoft%20Azure-Administrator%20Associate%20(AZ--104)-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white" alt="Microsoft Azure Administrator Associate">
         </a>
       </td>
       <td>
-        <a href="https://aws.amazon.com/certification/">
+        <a href="https://www.credly.com/badges/1d9d473b-b8d0-4fc6-b538-ad594ff3db61/public_url">
           <img src="https://img.shields.io/badge/AWS-Certified%20AI%20Practitioner-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS Certified AI Practitioner">
         </a>
       </td>
     </tr>
     <tr>
       <td>
-        <a href="https://aws.amazon.com/certification/">
+        <a href="https://www.credly.com/badges/2a68624d-353d-4ebf-8f08-ee1c481c38ed/public_url">
           <img src="https://img.shields.io/badge/AWS-Cloud%20Practitioner-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS Certified Cloud Practitioner">
         </a>
       </td>
       <td>
-        <a href="https://github.com/features/security">
+        <a href="https://www.credly.com/badges/d257802b-475a-4467-b32a-35167db1809d/public_url">
           <img src="https://img.shields.io/badge/GitHub-Foundations-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Foundations">
         </a>
       </td>
@@ -74,7 +74,7 @@ Results-driven DevOps and Cloud Platform Engineer with **3.10 years of experienc
   
   <br>
   
-  <sub>Also Certified in: **Microsoft Azure Fundamentals (AZ-900)**</sub>
+  <sub>Also Certified in: [**Microsoft Azure Fundamentals (AZ-900)**](https://www.credly.com/badges/ebc4542a-98ee-48de-9221-89ae35e12aa1/public_url)</sub>
 </div>
 
 ---
