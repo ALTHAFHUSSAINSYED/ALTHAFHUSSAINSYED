@@ -195,7 +195,10 @@
         <use href="#k8s-spoke-small-left-light" transform="rotate(308.57, 50, 80)"/>
         <!-- Hub -->
         <circle cx="50" cy="80" r="9" fill="#326ce5" stroke="#ffffff" stroke-width="4.5"/>
-      </g>    <!-- 2. Docker Whale (Swimming & Swinging Animation - Shifted Left) -->
+      </g>
+    </g>
+
+    <!-- 2. Docker Whale (Swimming & Swinging Animation - Shifted Left) -->
     <g opacity="0">
       <animate attributeName="opacity" to="0.95" dur="0.5s" begin="0.25s" fill="freeze"/>
       <!-- Outer translate drift (swimming left & right) -->
