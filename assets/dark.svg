@@ -48,39 +48,39 @@
       <stop offset="100%" stop-color="#10B981"/>
     </linearGradient>
 
-    <!-- Typing Masks for 20s Loopable DevOps Pipeline Simulation -->
+    <!-- Typing Masks for 100s Loopable DevOps Pipeline Simulation (20s per stage) -->
     <mask id="typingMask1">
       <rect x="0" y="0" width="1180" height="610" fill="black"/>
-      <rect x="560" y="120" width="0" height="30" fill="white">
-        <animate attributeName="width" values="0; 0; 300; 300; 0" keyTimes="0; 0.01; 0.05; 0.975; 1" dur="20s" repeatCount="indefinite"/>
+      <rect x="540" y="120" width="0" height="30" fill="white">
+        <animate attributeName="width" values="0; 0; 450; 450; 0" keyTimes="0; 0.005; 0.025; 0.195; 1" dur="100s" repeatCount="indefinite"/>
       </rect>
     </mask>
 
     <mask id="typingMask2">
       <rect x="0" y="0" width="1180" height="610" fill="black"/>
-      <rect x="560" y="190" width="0" height="30" fill="white">
-        <animate attributeName="width" values="0; 0; 350; 350; 0" keyTimes="0; 0.15; 0.21; 0.975; 1" dur="20s" repeatCount="indefinite"/>
+      <rect x="540" y="120" width="0" height="30" fill="white">
+        <animate attributeName="width" values="0; 0; 450; 450; 0" keyTimes="0; 0.205; 0.225; 0.395; 1" dur="100s" repeatCount="indefinite"/>
       </rect>
     </mask>
 
     <mask id="typingMask3">
       <rect x="0" y="0" width="1180" height="610" fill="black"/>
-      <rect x="560" y="260" width="0" height="30" fill="white">
-        <animate attributeName="width" values="0; 0; 450; 450; 0" keyTimes="0; 0.31; 0.375; 0.975; 1" dur="20s" repeatCount="indefinite"/>
+      <rect x="540" y="120" width="0" height="30" fill="white">
+        <animate attributeName="width" values="0; 0; 450; 450; 0" keyTimes="0; 0.405; 0.425; 0.595; 1" dur="100s" repeatCount="indefinite"/>
       </rect>
     </mask>
 
     <mask id="typingMask4">
       <rect x="0" y="0" width="1180" height="610" fill="black"/>
-      <rect x="560" y="310" width="0" height="30" fill="white">
-        <animate attributeName="width" values="0; 0; 450; 450; 0" keyTimes="0; 0.435; 0.50; 0.975; 1" dur="20s" repeatCount="indefinite"/>
+      <rect x="540" y="120" width="0" height="30" fill="white">
+        <animate attributeName="width" values="0; 0; 450; 450; 0" keyTimes="0; 0.605; 0.625; 0.795; 1" dur="100s" repeatCount="indefinite"/>
       </rect>
     </mask>
 
     <mask id="typingMask5">
       <rect x="0" y="0" width="1180" height="610" fill="black"/>
-      <rect x="560" y="380" width="0" height="30" fill="white">
-        <animate attributeName="width" values="0; 0; 400; 400; 0" keyTimes="0; 0.585; 0.65; 0.975; 1" dur="20s" repeatCount="indefinite"/>
+      <rect x="540" y="120" width="0" height="30" fill="white">
+        <animate attributeName="width" values="0; 0; 450; 450; 0" keyTimes="0; 0.805; 0.825; 0.995; 1" dur="100s" repeatCount="indefinite"/>
       </rect>
     </mask>
 
@@ -437,19 +437,19 @@
     <!-- Terminal Content (Monospace text) -->
     <g class="font-mono term-body">
       
-      <!-- ==================== STAGE 1: Code Quality & Unit Tests (0s - 3.8s) ==================== -->
+      <!-- ==================== STAGE 1: Code Quality & Unit Tests (0s - 20s) ==================== -->
       <g opacity="0">
-        <animate attributeName="opacity" values="1; 1; 0; 0" keyTimes="0; 0.19; 0.191; 1" dur="20s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1; 1; 0; 0" keyTimes="0; 0.195; 0.196; 1" dur="100s" repeatCount="indefinite"/>
         <!-- Command -->
-        <text x="545" y="145"><tspan class="term-prompt">$ </tspan><tspan class="term-cmd" mask="url(#typingMask1)">npm run test:ci</tspan></text>
+        <text x="545" y="145" mask="url(#typingMask1)"><tspan class="term-prompt">$ </tspan><tspan class="term-cmd">npm run test:ci</tspan></text>
         <!-- Cursor -->
         <rect y="130" width="8" height="18" fill="#22D3EE" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.01; 0.011; 0.05; 0.051; 1" dur="20s" repeatCount="indefinite"/>
-          <animate attributeName="x" values="562; 562; 720; 720" keyTimes="0; 0.01; 0.05; 1" dur="20s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.005; 0.006; 0.025; 0.026; 1" dur="100s" repeatCount="indefinite"/>
+          <animate attributeName="x" values="562; 562; 720; 720" keyTimes="0; 0.005; 0.025; 1" dur="100s" repeatCount="indefinite"/>
         </rect>
         <!-- Outputs -->
         <g opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.075; 0.076; 0.19; 1" dur="20s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.035; 0.036; 0.195; 1" dur="100s" repeatCount="indefinite"/>
           <text x="545" y="175" fill="#94A3B8">✓ Router tests passed (12ms)</text>
           <text x="545" y="200" fill="#94A3B8">✓ Controller tests passed (45ms)</text>
           <text x="545" y="225" fill="#94A3B8">✓ DB Connection pool tests passed (89ms)</text>
@@ -458,19 +458,19 @@
         </g>
       </g>
 
-      <!-- ==================== STAGE 2: Infrastructure Provisioning (4s - 7.8s) ==================== -->
+      <!-- ==================== STAGE 2: Infrastructure Provisioning (20s - 40s) ==================== -->
       <g opacity="0">
-        <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.20; 0.201; 0.39; 0.391; 1" dur="20s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.20; 0.201; 0.395; 0.396; 1" dur="100s" repeatCount="indefinite"/>
         <!-- Command -->
-        <text x="545" y="145"><tspan class="term-prompt">$ </tspan><tspan class="term-cmd" mask="url(#typingMask2)">terraform plan</tspan></text>
+        <text x="545" y="145" mask="url(#typingMask2)"><tspan class="term-prompt">$ </tspan><tspan class="term-cmd">terraform plan</tspan></text>
         <!-- Cursor -->
         <rect y="130" width="8" height="18" fill="#22D3EE" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.20; 0.201; 0.25; 0.251; 1" dur="20s" repeatCount="indefinite"/>
-          <animate attributeName="x" values="562; 562; 690; 690" keyTimes="0; 0.20; 0.25; 1" dur="20s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.205; 0.206; 0.225; 0.226; 1" dur="100s" repeatCount="indefinite"/>
+          <animate attributeName="x" values="562; 562; 690; 690" keyTimes="0; 0.205; 0.225; 1" dur="100s" repeatCount="indefinite"/>
         </rect>
         <!-- Outputs -->
         <g opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.275; 0.276; 0.39; 1" dur="20s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.235; 0.236; 0.395; 1" dur="100s" repeatCount="indefinite"/>
           <text x="545" y="175" fill="#E2E8F0">Terraform will perform the following actions:</text>
           <text x="545" y="200" fill="#E2E8F0">  + aws_eks_node_group.workers</text>
           <text x="545" y="225" fill="#E2E8F0">  ~ aws_security_group.cluster (modified)</text>
@@ -479,19 +479,19 @@
         </g>
       </g>
 
-      <!-- ==================== STAGE 3: Docker Build & Scan (8s - 11.8s) ==================== -->
+      <!-- ==================== STAGE 3: Docker Build & Scan (40s - 60s) ==================== -->
       <g opacity="0">
-        <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.40; 0.401; 0.59; 0.591; 1" dur="20s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.40; 0.401; 0.595; 0.596; 1" dur="100s" repeatCount="indefinite"/>
         <!-- Command -->
-        <text x="545" y="145"><tspan class="term-prompt">$ </tspan><tspan class="term-cmd" mask="url(#typingMask3)">docker build -t api-service:v2.1.0 .</tspan></text>
+        <text x="545" y="145" mask="url(#typingMask3)"><tspan class="term-prompt">$ </tspan><tspan class="term-cmd">docker build -t api-service:v2.1.0 .</tspan></text>
         <!-- Cursor -->
         <rect y="130" width="8" height="18" fill="#22D3EE" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.40; 0.401; 0.46; 0.461; 1" dur="20s" repeatCount="indefinite"/>
-          <animate attributeName="x" values="562; 562; 860; 860" keyTimes="0; 0.40; 0.46; 1" dur="20s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.405; 0.406; 0.425; 0.426; 1" dur="100s" repeatCount="indefinite"/>
+          <animate attributeName="x" values="562; 562; 860; 860" keyTimes="0; 0.405; 0.425; 1" dur="100s" repeatCount="indefinite"/>
         </rect>
         <!-- Outputs -->
         <g opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.475; 0.476; 0.59; 1" dur="20s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.435; 0.436; 0.595; 1" dur="100s" repeatCount="indefinite"/>
           <text x="545" y="175" fill="#94A3B8">Step 1/3 : FROM node:18-alpine</text>
           <text x="545" y="200" fill="#94A3B8">Step 2/3 : RUN npm ci --only=production</text>
           <text x="545" y="225" fill="#94A3B8">Step 3/3 : COPY . .</text>
@@ -500,19 +500,19 @@
         </g>
       </g>
 
-      <!-- ==================== STAGE 4: Kubernetes Deployment (12s - 15.8s) ==================== -->
+      <!-- ==================== STAGE 4: Kubernetes Deployment (60s - 80s) ==================== -->
       <g opacity="0">
-        <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.60; 0.601; 0.79; 0.791; 1" dur="20s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.60; 0.601; 0.795; 0.796; 1" dur="100s" repeatCount="indefinite"/>
         <!-- Command -->
-        <text x="545" y="145"><tspan class="term-prompt">$ </tspan><tspan class="term-cmd" mask="url(#typingMask4)">kubectl apply -f k8s/</tspan></text>
+        <text x="545" y="145" mask="url(#typingMask4)"><tspan class="term-prompt">$ </tspan><tspan class="term-cmd">kubectl apply -f k8s/</tspan></text>
         <!-- Cursor -->
         <rect y="130" width="8" height="18" fill="#22D3EE" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.60; 0.601; 0.65; 0.651; 1" dur="20s" repeatCount="indefinite"/>
-          <animate attributeName="x" values="562; 562; 730; 730" keyTimes="0; 0.60; 0.65; 1" dur="20s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.605; 0.606; 0.625; 0.626; 1" dur="100s" repeatCount="indefinite"/>
+          <animate attributeName="x" values="562; 562; 730; 730" keyTimes="0; 0.605; 0.625; 1" dur="100s" repeatCount="indefinite"/>
         </rect>
         <!-- Outputs -->
         <g opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.675; 0.676; 0.79; 1" dur="20s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.635; 0.636; 0.795; 1" dur="100s" repeatCount="indefinite"/>
           <text x="545" y="175" fill="#E2E8F0">namespace/production configured</text>
           <text x="545" y="200" fill="#E2E8F0">deployment.apps/api-server configured</text>
           <text x="545" y="225" fill="#E2E8F0">service/api-service configured</text>
@@ -521,19 +521,19 @@
         </g>
       </g>
 
-      <!-- ==================== STAGE 5: Deployment Verification (16s - 19.8s) ==================== -->
+      <!-- ==================== STAGE 5: Deployment Verification (80s - 100s) ==================== -->
       <g opacity="0">
-        <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.80; 0.801; 0.99; 1" dur="20s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.80; 0.801; 0.995; 1" dur="100s" repeatCount="indefinite"/>
         <!-- Command -->
-        <text x="545" y="145"><tspan class="term-prompt">$ </tspan><tspan class="term-cmd" mask="url(#typingMask5)">kubectl rollout status deployment/api-server</tspan></text>
+        <text x="545" y="145" mask="url(#typingMask5)"><tspan class="term-prompt">$ </tspan><tspan class="term-cmd">kubectl rollout status deployment/api-server</tspan></text>
         <!-- Cursor -->
         <rect y="130" width="8" height="18" fill="#22D3EE" opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.80; 0.801; 0.86; 0.861; 1" dur="20s" repeatCount="indefinite"/>
-          <animate attributeName="x" values="562; 562; 890; 890" keyTimes="0; 0.80; 0.86; 1" dur="20s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.805; 0.806; 0.825; 0.826; 1" dur="100s" repeatCount="indefinite"/>
+          <animate attributeName="x" values="562; 562; 890; 890" keyTimes="0; 0.805; 0.825; 1" dur="100s" repeatCount="indefinite"/>
         </rect>
         <!-- Outputs -->
         <g opacity="0">
-          <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.875; 0.876; 0.99; 1" dur="20s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.875; 0.876; 0.995; 1" dur="100s" repeatCount="indefinite"/>
           <text x="545" y="175" fill="#94A3B8">Waiting for deployment "api-server" rollout...</text>
           <text x="545" y="200" fill="#94A3B8">1 old replicas are pending termination...</text>
           <text x="545" y="225" class="term-success">Deployment "api-server" successfully rolled out! ✔</text>
