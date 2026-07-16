@@ -437,110 +437,108 @@
     <!-- Terminal Content (Monospace text) -->
     <g class="font-mono term-body">
       
-      <!-- ==================== COMMAND 1 ==================== -->
-      <!-- Prompt and Command -->
+      <!-- ==================== STAGE 1: Code Quality & Unit Tests (0s - 3.8s) ==================== -->
       <g opacity="0">
-        <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.01; 0.011; 0.975; 1" dur="20s" repeatCount="indefinite"/>
-        <text x="545" y="140"><tspan class="term-prompt">$ </tspan><tspan class="term-cmd" mask="url(#typingMask1)">git push origin main</tspan></text>
-      </g>
-      
-      <!-- Blinking Typing Cursor 1 -->
-      <rect y="125" width="8" height="18" fill="#22D3EE" opacity="0">
-        <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.01; 0.011; 0.05; 0.051; 1" dur="20s" repeatCount="indefinite"/>
-        <animate attributeName="x" values="562; 562; 740; 740" keyTimes="0; 0.01; 0.05; 1" dur="20s" repeatCount="indefinite"/>
-      </rect>
-
-      <!-- Output 1 (Appears at 1.5s) -->
-      <g opacity="0">
-        <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.075; 0.076; 0.975; 1" dur="20s" repeatCount="indefinite"/>
-        <text x="545" y="160" fill="#94A3B8">Pushing to ECR: althaf/api:v2.1.0</text>
-        <text x="545" y="180" class="term-success">Image pushed successfully ✔ [ID: sha256:d87f...]</text>
-      </g>
-
-      <!-- ==================== COMMAND 2 ==================== -->
-      <!-- Prompt and Command -->
-      <g opacity="0">
-        <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.15; 0.151; 0.975; 1" dur="20s" repeatCount="indefinite"/>
-        <text x="545" y="210"><tspan class="term-prompt">$ </tspan><tspan class="term-cmd" mask="url(#typingMask2)">terraform apply -auto-approve</tspan></text>
-      </g>
-      
-      <!-- Blinking Typing Cursor 2 -->
-      <rect y="195" width="8" height="18" fill="#22D3EE" opacity="0">
-        <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.15; 0.151; 0.21; 0.211; 1" dur="20s" repeatCount="indefinite"/>
-        <animate attributeName="x" values="562; 562; 810; 810" keyTimes="0; 0.15; 0.21; 1" dur="20s" repeatCount="indefinite"/>
-      </rect>
-
-      <!-- Output 2 (Appears at 4.7s) -->
-      <g opacity="0">
-        <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.235; 0.236; 0.975; 1" dur="20s" repeatCount="indefinite"/>
-        <text x="545" y="230" fill="#E2E8F0">aws_eks_cluster.eks: Modifying... [ID: dev-cluster]</text>
-        <text x="545" y="250" class="term-success">Apply complete! Resources: 0 added, 2 changed, 0 destroyed.</text>
+        <animate attributeName="opacity" values="1; 1; 0; 0" keyTimes="0; 0.19; 0.191; 1" dur="20s" repeatCount="indefinite"/>
+        <!-- Command -->
+        <text x="545" y="145"><tspan class="term-prompt">$ </tspan><tspan class="term-cmd" mask="url(#typingMask1)">npm run test:ci</tspan></text>
+        <!-- Cursor -->
+        <rect y="130" width="8" height="18" fill="#22D3EE" opacity="0">
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.01; 0.011; 0.05; 0.051; 1" dur="20s" repeatCount="indefinite"/>
+          <animate attributeName="x" values="562; 562; 720; 720" keyTimes="0; 0.01; 0.05; 1" dur="20s" repeatCount="indefinite"/>
+        </rect>
+        <!-- Outputs -->
+        <g opacity="0">
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.075; 0.076; 0.19; 1" dur="20s" repeatCount="indefinite"/>
+          <text x="545" y="175" fill="#94A3B8">✓ Router tests passed (12ms)</text>
+          <text x="545" y="200" fill="#94A3B8">✓ Controller tests passed (45ms)</text>
+          <text x="545" y="225" fill="#94A3B8">✓ DB Connection pool tests passed (89ms)</text>
+          <text x="545" y="255" fill="#E2E8F0">Tests: 24 passed, 24 total. Time: 1.25s</text>
+          <text x="545" y="295" class="term-success" font-weight="bold">STATUS: CODE CHECK PASSED ✔</text>
+        </g>
       </g>
 
-      <!-- ==================== COMMAND 3 ==================== -->
-      <!-- Prompt and Command -->
+      <!-- ==================== STAGE 2: Infrastructure Provisioning (4s - 7.8s) ==================== -->
       <g opacity="0">
-        <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.31; 0.311; 0.975; 1" dur="20s" repeatCount="indefinite"/>
-        <text x="545" y="280"><tspan class="term-prompt">$ </tspan><tspan class="term-cmd" mask="url(#typingMask3)">aws eks update-kubeconfig --name dev-cluster</tspan></text>
-      </g>
-      
-      <!-- Blinking Typing Cursor 3 -->
-      <rect y="265" width="8" height="18" fill="#22D3EE" opacity="0">
-        <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.31; 0.311; 0.375; 0.376; 1" dur="20s" repeatCount="indefinite"/>
-        <animate attributeName="x" values="562; 562; 920; 920" keyTimes="0; 0.31; 0.375; 1" dur="20s" repeatCount="indefinite"/>
-      </rect>
-
-      <!-- Output 3 (Appears at 8.0s) -->
-      <g opacity="0">
-        <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.40; 0.401; 0.975; 1" dur="20s" repeatCount="indefinite"/>
-        <text x="545" y="300" fill="#E2E8F0">Added new context arn:aws:eks:us-east-1:12345:cluster/dev-cluster</text>
-      </g>
-
-      <!-- ==================== COMMAND 4 ==================== -->
-      <!-- Prompt and Command -->
-      <g opacity="0">
-        <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.435; 0.436; 0.975; 1" dur="20s" repeatCount="indefinite"/>
-        <text x="545" y="330"><tspan class="term-prompt">$ </tspan><tspan class="term-cmd" mask="url(#typingMask4)">kubectl apply -f k8s/deployment.yaml</tspan></text>
-      </g>
-      
-      <!-- Blinking Typing Cursor 4 -->
-      <rect y="315" width="8" height="18" fill="#22D3EE" opacity="0">
-        <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.435; 0.436; 0.50; 0.501; 1" dur="20s" repeatCount="indefinite"/>
-        <animate attributeName="x" values="562; 562; 890; 890" keyTimes="0; 0.435; 0.50; 1" dur="20s" repeatCount="indefinite"/>
-      </rect>
-
-      <!-- Output 4 (Appears at 10.5s) -->
-      <g opacity="0">
-        <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.525; 0.526; 0.975; 1" dur="20s" repeatCount="indefinite"/>
-        <text x="545" y="350" fill="#E2E8F0">deployment.apps/web-gateway configured</text>
-        <text x="545" y="370" fill="#E2E8F0">service/web-gateway-service configured</text>
+        <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.20; 0.201; 0.39; 0.391; 1" dur="20s" repeatCount="indefinite"/>
+        <!-- Command -->
+        <text x="545" y="145"><tspan class="term-prompt">$ </tspan><tspan class="term-cmd" mask="url(#typingMask2)">terraform plan</tspan></text>
+        <!-- Cursor -->
+        <rect y="130" width="8" height="18" fill="#22D3EE" opacity="0">
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.20; 0.201; 0.25; 0.251; 1" dur="20s" repeatCount="indefinite"/>
+          <animate attributeName="x" values="562; 562; 690; 690" keyTimes="0; 0.20; 0.25; 1" dur="20s" repeatCount="indefinite"/>
+        </rect>
+        <!-- Outputs -->
+        <g opacity="0">
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.275; 0.276; 0.39; 1" dur="20s" repeatCount="indefinite"/>
+          <text x="545" y="175" fill="#E2E8F0">Terraform will perform the following actions:</text>
+          <text x="545" y="200" fill="#E2E8F0">  + aws_eks_node_group.workers</text>
+          <text x="545" y="225" fill="#E2E8F0">  ~ aws_security_group.cluster (modified)</text>
+          <text x="545" y="255" fill="#E2E8F0">Plan: 1 to add, 1 to change, 0 to destroy.</text>
+          <text x="545" y="295" class="term-success" font-weight="bold">STATUS: INFRASTRUCTURE VALIDATED ✔</text>
+        </g>
       </g>
 
-      <!-- ==================== COMMAND 5 ==================== -->
-      <!-- Prompt and Command -->
+      <!-- ==================== STAGE 3: Docker Build & Scan (8s - 11.8s) ==================== -->
       <g opacity="0">
-        <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.585; 0.586; 0.975; 1" dur="20s" repeatCount="indefinite"/>
-        <text x="545" y="400"><tspan class="term-prompt">$ </tspan><tspan class="term-cmd" mask="url(#typingMask5)">kubectl get pods -n production</tspan></text>
+        <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.40; 0.401; 0.59; 0.591; 1" dur="20s" repeatCount="indefinite"/>
+        <!-- Command -->
+        <text x="545" y="145"><tspan class="term-prompt">$ </tspan><tspan class="term-cmd" mask="url(#typingMask3)">docker build -t api-service:v2.1.0 .</tspan></text>
+        <!-- Cursor -->
+        <rect y="130" width="8" height="18" fill="#22D3EE" opacity="0">
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.40; 0.401; 0.46; 0.461; 1" dur="20s" repeatCount="indefinite"/>
+          <animate attributeName="x" values="562; 562; 860; 860" keyTimes="0; 0.40; 0.46; 1" dur="20s" repeatCount="indefinite"/>
+        </rect>
+        <!-- Outputs -->
+        <g opacity="0">
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.475; 0.476; 0.59; 1" dur="20s" repeatCount="indefinite"/>
+          <text x="545" y="175" fill="#94A3B8">Step 1/3 : FROM node:18-alpine</text>
+          <text x="545" y="200" fill="#94A3B8">Step 2/3 : RUN npm ci --only=production</text>
+          <text x="545" y="225" fill="#94A3B8">Step 3/3 : COPY . .</text>
+          <text x="545" y="255" class="term-success">Successfully built image api-service:v2.1.0 ✔</text>
+          <text x="545" y="295" class="term-success" font-weight="bold">STATUS: DOCKER IMAGE PUSHED ✔</text>
+        </g>
       </g>
-      
-      <!-- Blinking Typing Cursor 5 -->
-      <rect y="385" width="8" height="18" fill="#22D3EE" opacity="0">
-        <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.585; 0.586; 0.65; 0.651; 1" dur="20s" repeatCount="indefinite"/>
-        <animate attributeName="x" values="562; 562; 840; 840" keyTimes="0; 0.585; 0.65; 1" dur="20s" repeatCount="indefinite"/>
-      </rect>
 
-      <!-- Output 5 (Appears at 13.5s) -->
+      <!-- ==================== STAGE 4: Kubernetes Deployment (12s - 15.8s) ==================== -->
       <g opacity="0">
-        <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.675; 0.676; 0.975; 1" dur="20s" repeatCount="indefinite"/>
-        <text x="545" y="420" fill="#64748B" font-weight="bold">NAME               READY   STATUS    RESTARTS   AGE</text>
-        <text x="545" y="440">web-gateway-x9a2   1/1     <tspan class="term-success">Running</tspan>   0          12s</text>
-        <text x="545" y="460">api-backend-k7s3   1/1     <tspan class="term-success">Running</tspan>   0          42d</text>
+        <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.60; 0.601; 0.79; 0.791; 1" dur="20s" repeatCount="indefinite"/>
+        <!-- Command -->
+        <text x="545" y="145"><tspan class="term-prompt">$ </tspan><tspan class="term-cmd" mask="url(#typingMask4)">kubectl apply -f k8s/</tspan></text>
+        <!-- Cursor -->
+        <rect y="130" width="8" height="18" fill="#22D3EE" opacity="0">
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.60; 0.601; 0.65; 0.651; 1" dur="20s" repeatCount="indefinite"/>
+          <animate attributeName="x" values="562; 562; 730; 730" keyTimes="0; 0.60; 0.65; 1" dur="20s" repeatCount="indefinite"/>
+        </rect>
+        <!-- Outputs -->
+        <g opacity="0">
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.675; 0.676; 0.79; 1" dur="20s" repeatCount="indefinite"/>
+          <text x="545" y="175" fill="#E2E8F0">namespace/production configured</text>
+          <text x="545" y="200" fill="#E2E8F0">deployment.apps/api-server configured</text>
+          <text x="545" y="225" fill="#E2E8F0">service/api-service configured</text>
+          <text x="545" y="250" fill="#E2E8F0">ingress.networking.k8s.io/main configured</text>
+          <text x="545" y="295" class="term-success" font-weight="bold">STATUS: CONFIGURATION APPLIED ✔</text>
+        </g>
       </g>
 
-      <!-- Success Banner (Appears at 15.2s) -->
+      <!-- ==================== STAGE 5: Deployment Verification (16s - 19.8s) ==================== -->
       <g opacity="0">
-        <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.76; 0.761; 0.975; 1" dur="20s" repeatCount="indefinite"/>
-        <text x="545" y="495" class="term-success" font-size="14" font-weight="bold">STATUS: ACTIVE | DEPLOYMENT SUCCESSFUL 🚀</text>
+        <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.80; 0.801; 0.99; 1" dur="20s" repeatCount="indefinite"/>
+        <!-- Command -->
+        <text x="545" y="145"><tspan class="term-prompt">$ </tspan><tspan class="term-cmd" mask="url(#typingMask5)">kubectl rollout status deployment/api-server</tspan></text>
+        <!-- Cursor -->
+        <rect y="130" width="8" height="18" fill="#22D3EE" opacity="0">
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.80; 0.801; 0.86; 0.861; 1" dur="20s" repeatCount="indefinite"/>
+          <animate attributeName="x" values="562; 562; 890; 890" keyTimes="0; 0.80; 0.86; 1" dur="20s" repeatCount="indefinite"/>
+        </rect>
+        <!-- Outputs -->
+        <g opacity="0">
+          <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.875; 0.876; 0.99; 1" dur="20s" repeatCount="indefinite"/>
+          <text x="545" y="175" fill="#94A3B8">Waiting for deployment "api-server" rollout...</text>
+          <text x="545" y="200" fill="#94A3B8">1 old replicas are pending termination...</text>
+          <text x="545" y="225" class="term-success">Deployment "api-server" successfully rolled out! ✔</text>
+          <text x="545" y="280" class="term-success" font-size="14" font-weight="bold">STATUS: PIPELINE COMPLETED SUCCESSFULLY 🚀</text>
+        </g>
       </g>
       
     </g>
