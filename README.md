@@ -2,9 +2,9 @@
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ALTHAFHUSSAINSYED/ALTHAFHUSSAINSYED/main/assets/dark.svg?v=4">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ALTHAFHUSSAINSYED/ALTHAFHUSSAINSYED/main/assets/light.svg?v=4">
-    <img src="https://raw.githubusercontent.com/ALTHAFHUSSAINSYED/ALTHAFHUSSAINSYED/main/assets/dark.svg?v=4" alt="Althaf Hussain Syed - DevOps Engineer" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ALTHAFHUSSAINSYED/ALTHAFHUSSAINSYED/main/assets/dark.svg?v=5">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ALTHAFHUSSAINSYED/ALTHAFHUSSAINSYED/main/assets/light.svg?v=5">
+    <img src="https://raw.githubusercontent.com/ALTHAFHUSSAINSYED/ALTHAFHUSSAINSYED/main/assets/dark.svg?v=5" alt="Althaf Hussain Syed - DevOps Engineer" width="100%">
   </picture>
 </div>
 

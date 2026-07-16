@@ -48,35 +48,39 @@
       <stop offset="100%" stop-color="#10B981"/>
     </linearGradient>
 
-    <!-- Typing Mask for Command 1: kubectl get pods -->
+    <!-- Typing Masks for 20s Loopable DevOps Pipeline Simulation -->
     <mask id="typingMask1">
       <rect x="0" y="0" width="1180" height="610" fill="black"/>
-      <rect x="562" y="120" width="0" height="30" fill="white">
-        <animate attributeName="width" from="0" to="250" dur="1s" begin="1s" fill="freeze"/>
+      <rect x="560" y="120" width="0" height="30" fill="white">
+        <animate attributeName="width" values="0; 0; 300; 300; 0" keyTimes="0; 0.01; 0.05; 0.975; 1" dur="20s" repeatCount="indefinite"/>
       </rect>
     </mask>
 
-    <!-- Typing Mask for Command 2: terraform apply -->
     <mask id="typingMask2">
       <rect x="0" y="0" width="1180" height="610" fill="black"/>
-      <rect x="562" y="270" width="0" height="30" fill="white">
-        <animate attributeName="width" from="0" to="250" dur="1s" begin="4s" fill="freeze"/>
+      <rect x="560" y="190" width="0" height="30" fill="white">
+        <animate attributeName="width" values="0; 0; 350; 350; 0" keyTimes="0; 0.15; 0.21; 0.975; 1" dur="20s" repeatCount="indefinite"/>
       </rect>
     </mask>
 
-    <!-- Typing Mask for Command 3: aws eks update-kubeconfig -->
     <mask id="typingMask3">
       <rect x="0" y="0" width="1180" height="610" fill="black"/>
-      <rect x="562" y="330" width="0" height="30" fill="white">
-        <animate attributeName="width" from="0" to="250" dur="1.2s" begin="7s" fill="freeze"/>
+      <rect x="560" y="260" width="0" height="30" fill="white">
+        <animate attributeName="width" values="0; 0; 450; 450; 0" keyTimes="0; 0.31; 0.375; 0.975; 1" dur="20s" repeatCount="indefinite"/>
       </rect>
     </mask>
 
-    <!-- Typing Mask for Command 4: git push origin main -->
     <mask id="typingMask4">
       <rect x="0" y="0" width="1180" height="610" fill="black"/>
-      <rect x="562" y="390" width="0" height="30" fill="white">
-        <animate attributeName="width" from="0" to="250" dur="1s" begin="10s" fill="freeze"/>
+      <rect x="560" y="310" width="0" height="30" fill="white">
+        <animate attributeName="width" values="0; 0; 450; 450; 0" keyTimes="0; 0.435; 0.50; 0.975; 1" dur="20s" repeatCount="indefinite"/>
+      </rect>
+    </mask>
+
+    <mask id="typingMask5">
+      <rect x="0" y="0" width="1180" height="610" fill="black"/>
+      <rect x="560" y="380" width="0" height="30" fill="white">
+        <animate attributeName="width" values="0; 0; 400; 400; 0" keyTimes="0; 0.585; 0.65; 0.975; 1" dur="20s" repeatCount="indefinite"/>
       </rect>
     </mask>
 
@@ -435,87 +439,108 @@
       
       <!-- ==================== COMMAND 1 ==================== -->
       <!-- Prompt and Command -->
-      <text x="545" y="140"><tspan class="term-prompt">$ </tspan><tspan class="term-cmd" mask="url(#typingMask1)">kubectl get pods</tspan></text>
+      <g opacity="0">
+        <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.01; 0.011; 0.975; 1" dur="20s" repeatCount="indefinite"/>
+        <text x="545" y="140"><tspan class="term-prompt">$ </tspan><tspan class="term-cmd" mask="url(#typingMask1)">git push origin main</tspan></text>
+      </g>
       
       <!-- Blinking Typing Cursor 1 -->
-      <rect x="562" y="125" width="8" height="18" fill="#22D3EE" opacity="0">
-        <set attributeName="opacity" to="1" begin="1s"/>
-        <animate attributeName="x" from="562" to="700" dur="1s" begin="1s" fill="freeze"/>
-        <animate attributeName="opacity" values="1;0;1" dur="0.8s" begin="1s" repeatCount="indefinite"/>
-        <set attributeName="opacity" to="0" begin="2s"/>
+      <rect y="125" width="8" height="18" fill="#22D3EE" opacity="0">
+        <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.01; 0.011; 0.05; 0.051; 1" dur="20s" repeatCount="indefinite"/>
+        <animate attributeName="x" values="562; 562; 740; 740" keyTimes="0; 0.01; 0.05; 1" dur="20s" repeatCount="indefinite"/>
       </rect>
 
-      <!-- Output 1 (Appears instantly at 2.2s) -->
+      <!-- Output 1 (Appears at 1.5s) -->
       <g opacity="0">
-        <set attributeName="opacity" to="1" begin="2.2s"/>
-        <text x="545" y="165" fill="#64748B" font-weight="bold">NAME          READY   STATUS    RESTARTS   AGE</text>
-        <text x="545" y="185">frontend      1/1     <tspan class="term-success">Running</tspan>   0          42d</text>
-        <text x="545" y="205">backend       1/1     <tspan class="term-success">Running</tspan>   0          42d</text>
-        <text x="545" y="225">prometheus    1/1     <tspan class="term-success">Running</tspan>   0          108d</text>
-        <text x="545" y="245">grafana       1/1     <tspan class="term-success">Running</tspan>   0          108d</text>
+        <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.075; 0.076; 0.975; 1" dur="20s" repeatCount="indefinite"/>
+        <text x="545" y="160" fill="#94A3B8">Pushing to ECR: althaf/api:v2.1.0</text>
+        <text x="545" y="180" class="term-success">Image pushed successfully ✔ [ID: sha256:d87f...]</text>
       </g>
 
       <!-- ==================== COMMAND 2 ==================== -->
       <!-- Prompt and Command -->
       <g opacity="0">
-        <set attributeName="opacity" to="1" begin="3.8s"/>
-        <text x="545" y="285"><tspan class="term-prompt">$ </tspan><tspan class="term-cmd" mask="url(#typingMask2)">terraform apply</tspan></text>
+        <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.15; 0.151; 0.975; 1" dur="20s" repeatCount="indefinite"/>
+        <text x="545" y="210"><tspan class="term-prompt">$ </tspan><tspan class="term-cmd" mask="url(#typingMask2)">terraform apply -auto-approve</tspan></text>
       </g>
       
       <!-- Blinking Typing Cursor 2 -->
-      <rect x="562" y="270" width="8" height="18" fill="#22D3EE" opacity="0">
-        <set attributeName="opacity" to="1" begin="4s"/>
-        <animate attributeName="x" from="562" to="690" dur="1s" begin="4s" fill="freeze"/>
-        <animate attributeName="opacity" values="1;0;1" dur="0.8s" begin="4s" repeatCount="indefinite"/>
-        <set attributeName="opacity" to="0" begin="5s"/>
+      <rect y="195" width="8" height="18" fill="#22D3EE" opacity="0">
+        <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.15; 0.151; 0.21; 0.211; 1" dur="20s" repeatCount="indefinite"/>
+        <animate attributeName="x" values="562; 562; 810; 810" keyTimes="0; 0.15; 0.21; 1" dur="20s" repeatCount="indefinite"/>
       </rect>
 
-      <!-- Output 2 (Appears at 5.2s) -->
+      <!-- Output 2 (Appears at 4.7s) -->
       <g opacity="0">
-        <set attributeName="opacity" to="1" begin="5.2s"/>
-        <text x="545" y="310" class="term-success">Apply complete! Resources: 47 added.</text>
+        <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.235; 0.236; 0.975; 1" dur="20s" repeatCount="indefinite"/>
+        <text x="545" y="230" fill="#E2E8F0">aws_eks_cluster.eks: Modifying... [ID: dev-cluster]</text>
+        <text x="545" y="250" class="term-success">Apply complete! Resources: 0 added, 2 changed, 0 destroyed.</text>
       </g>
 
       <!-- ==================== COMMAND 3 ==================== -->
       <!-- Prompt and Command -->
       <g opacity="0">
-        <set attributeName="opacity" to="1" begin="6.8s"/>
-        <text x="545" y="350"><tspan class="term-prompt">$ </tspan><tspan class="term-cmd" mask="url(#typingMask3)">aws eks update-kubeconfig</tspan></text>
+        <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.31; 0.311; 0.975; 1" dur="20s" repeatCount="indefinite"/>
+        <text x="545" y="280"><tspan class="term-prompt">$ </tspan><tspan class="term-cmd" mask="url(#typingMask3)">aws eks update-kubeconfig --name dev-cluster</tspan></text>
       </g>
       
       <!-- Blinking Typing Cursor 3 -->
-      <rect x="562" y="335" width="8" height="18" fill="#22D3EE" opacity="0">
-        <set attributeName="opacity" to="1" begin="7s"/>
-        <animate attributeName="x" from="562" to="780" dur="1.2s" begin="7s" fill="freeze"/>
-        <animate attributeName="opacity" values="1;0;1" dur="0.8s" begin="7s" repeatCount="indefinite"/>
-        <set attributeName="opacity" to="0" begin="8.2s"/>
+      <rect y="265" width="8" height="18" fill="#22D3EE" opacity="0">
+        <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.31; 0.311; 0.375; 0.376; 1" dur="20s" repeatCount="indefinite"/>
+        <animate attributeName="x" values="562; 562; 920; 920" keyTimes="0; 0.31; 0.375; 1" dur="20s" repeatCount="indefinite"/>
       </rect>
 
-      <!-- Output 3 (Appears at 8.4s) -->
+      <!-- Output 3 (Appears at 8.0s) -->
       <g opacity="0">
-        <set attributeName="opacity" to="1" begin="8.4s"/>
-        <text x="545" y="375" fill="#E2E8F0">Updated context.</text>
+        <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.40; 0.401; 0.975; 1" dur="20s" repeatCount="indefinite"/>
+        <text x="545" y="300" fill="#E2E8F0">Added new context arn:aws:eks:us-east-1:12345:cluster/dev-cluster</text>
       </g>
 
       <!-- ==================== COMMAND 4 ==================== -->
       <!-- Prompt and Command -->
       <g opacity="0">
-        <set attributeName="opacity" to="1" begin="9.8s"/>
-        <text x="545" y="415"><tspan class="term-prompt">$ </tspan><tspan class="term-cmd" mask="url(#typingMask4)">git push origin main</tspan></text>
+        <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.435; 0.436; 0.975; 1" dur="20s" repeatCount="indefinite"/>
+        <text x="545" y="330"><tspan class="term-prompt">$ </tspan><tspan class="term-cmd" mask="url(#typingMask4)">kubectl apply -f k8s/deployment.yaml</tspan></text>
       </g>
       
       <!-- Blinking Typing Cursor 4 -->
-      <rect x="562" y="400" width="8" height="18" fill="#22D3EE" opacity="0">
-        <set attributeName="opacity" to="1" begin="10s"/>
-        <animate attributeName="x" from="562" to="740" dur="1s" begin="10s" fill="freeze"/>
-        <animate attributeName="opacity" values="1;0;1" dur="0.8s" begin="10s" repeatCount="indefinite"/>
-        <set attributeName="opacity" to="0" begin="11s"/>
+      <rect y="315" width="8" height="18" fill="#22D3EE" opacity="0">
+        <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.435; 0.436; 0.50; 0.501; 1" dur="20s" repeatCount="indefinite"/>
+        <animate attributeName="x" values="562; 562; 890; 890" keyTimes="0; 0.435; 0.50; 1" dur="20s" repeatCount="indefinite"/>
       </rect>
 
-      <!-- Output 4 (Appears at 11.2s) -->
+      <!-- Output 4 (Appears at 10.5s) -->
       <g opacity="0">
-        <set attributeName="opacity" to="1" begin="11.2s"/>
-        <text x="545" y="440" class="term-success">Deployment Successful ✔</text>
+        <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.525; 0.526; 0.975; 1" dur="20s" repeatCount="indefinite"/>
+        <text x="545" y="350" fill="#E2E8F0">deployment.apps/web-gateway configured</text>
+        <text x="545" y="370" fill="#E2E8F0">service/web-gateway-service configured</text>
+      </g>
+
+      <!-- ==================== COMMAND 5 ==================== -->
+      <!-- Prompt and Command -->
+      <g opacity="0">
+        <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.585; 0.586; 0.975; 1" dur="20s" repeatCount="indefinite"/>
+        <text x="545" y="400"><tspan class="term-prompt">$ </tspan><tspan class="term-cmd" mask="url(#typingMask5)">kubectl get pods -n production</tspan></text>
+      </g>
+      
+      <!-- Blinking Typing Cursor 5 -->
+      <rect y="385" width="8" height="18" fill="#22D3EE" opacity="0">
+        <animate attributeName="opacity" values="0; 0; 1; 1; 0; 0" keyTimes="0; 0.585; 0.586; 0.65; 0.651; 1" dur="20s" repeatCount="indefinite"/>
+        <animate attributeName="x" values="562; 562; 840; 840" keyTimes="0; 0.585; 0.65; 1" dur="20s" repeatCount="indefinite"/>
+      </rect>
+
+      <!-- Output 5 (Appears at 13.5s) -->
+      <g opacity="0">
+        <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.675; 0.676; 0.975; 1" dur="20s" repeatCount="indefinite"/>
+        <text x="545" y="420" fill="#64748B" font-weight="bold">NAME               READY   STATUS    RESTARTS   AGE</text>
+        <text x="545" y="440">web-gateway-x9a2   1/1     <tspan class="term-success">Running</tspan>   0          12s</text>
+        <text x="545" y="460">api-backend-k7s3   1/1     <tspan class="term-success">Running</tspan>   0          42d</text>
+      </g>
+
+      <!-- Success Banner (Appears at 15.2s) -->
+      <g opacity="0">
+        <animate attributeName="opacity" values="0; 0; 1; 1; 0" keyTimes="0; 0.76; 0.761; 0.975; 1" dur="20s" repeatCount="indefinite"/>
+        <text x="545" y="495" class="term-success" font-size="14" font-weight="bold">STATUS: ACTIVE | DEPLOYMENT SUCCESSFUL 🚀</text>
       </g>
       
     </g>
